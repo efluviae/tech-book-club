@@ -1,0 +1,44 @@
+.btn--light {
+    display: block;
+    text-decoration: none;
+    color: var(--c-neutral-900);
+    background-color: var(--c-light-salmon-50);
+    border: var(--c-neutral-900) solid 2px;
+    border-radius: 8px;
+    padding: var(--spacing-250) var(--spacing-200);    
+}
+
+.btn--light:hover {
+    background: var(--c-gradient);
+}
+
+.btn--light:focus {
+    box-shadow: 0 0 0 3px var(--c-neutral-0),
+                0 0 0 5px var(--c-neutral-700);
+    
+}
+
+.btn--dark {
+    display: block;
+    text-decoration: none;
+    color: var(--c-neutral-100);
+    background-color: var(--c-neutral-900);
+    border: var(--c-neutral-100) solid 2px;
+    border-radius: 8px;
+    padding: var(--spacing-250) var(--spacing-200); 
+}
+
+.btn--dark:hover {
+    background: var(--c-gradient-dark);
+}
+
+.btn--dark:focus {
+    box-shadow: 0 0 0 3px var(--c-neutral-900),
+                0 0 0 5px var(--c-neutral-100);
+}
+
+@media (min-width: 768px) {
+    .btn--light, .btn--dark {
+        padding: var(--spacing-250) var(--spacing-300);
+    }
+}

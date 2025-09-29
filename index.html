@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/typography.css">
+  <link rel="stylesheet" href="components/atoms/buttons.css">
+  <link rel="stylesheet" href="components/molecules/nav.css">
+  <link rel="stylesheet" href="components/molecules/hero.css">
+  <link rel="stylesheet" href="components/molecules/feature.css">
+  <link rel="stylesheet" href="components/molecules/steps.css">
+  <link rel="stylesheet" href="components/organisms/options.css">
+  <link rel="stylesheet" href="components/molecules/quote.css">
+  <link rel="stylesheet" href="components/molecules/footer.css">
+
+  <title>Frontend Mentor | Tech book club</title>
+</head>
+
+<body>
+  <div class="bg--neutral-100">
+    <header class="nav container">
+      <a href="/"><img src="assets/images/logo.svg" alt="Home" class="nav__logo"></a>
+    </header>
+  
+    <section class="hero container">
+      <div class="hero__content">
+        <div class="hero__txt">
+          <h1 class="hero__headline c--gradient">Join the ultimate tech book club</h1>
+          <p class="hero__desc c--neutral-700 txt-preset-5">Turn your reading time into learning time with fellow tech enthusiasts. Get curated recommendations, join vibrant discussions, and level up your skills one chapter at a time.</p>
+        </div>
+  
+        <div class="hero__cta">
+            <a href="#options" class="hero__btn btn--light txt-preset-6 uppercase">Review Membership Options <img class="hero__arrow" src="assets/images/icon-arrow-down.svg" alt="down arrow"></a>
+  
+          <div class="hero__testimonial">
+            <img src="assets/images/image-avatars.webp" alt="three user photo icons" width="110" height="41" class="hero__cta__img">
+  
+            <div class="hero__rating">
+              <img class="hero__star-icon" src="assets/images/icon-star.svg" alt="star rating">
+              <img class="hero__star-icon" src="assets/images/icon-star.svg" alt="star rating">
+              <img class="hero__star-icon" src="assets/images/icon-star.svg" alt="star rating">
+              <img class="hero__star-icon" src="assets/images/icon-star.svg" alt="star rating">
+              <img class="hero__star-icon" src="assets/images/icon-star.svg" alt="star rating">
+            </div>
+            
+            <p class="hero__testimonial__txt txt-preset-7">200+ developers joined already</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="hero__image-container">
+        <picture>
+          <source srcset="assets/images/image-hero-tablet.webp" media="(min-width: 768px)">
+          <source srcset="assets/images/image-hero-desktop.webp" media="(min-width: 1200px)">
+          <img src="assets/images/image-hero-mobile.webp" alt="people talking about a book" class="hero__img">
+        </picture>
+        <img class="pattern--glow" src="assets/images/pattern-glow.svg" alt="">
+      </div>
+    </section>
+  </div>
+
+  
+  <main>
+    <section class="features container">
+      <div class="feature">
+        <div class="feature__content">
+          <h2 class="feature__title">Read together, grow together</h2>
+          <ul class="feature__list list--check txt-preset-5 c--neutral-700">
+            <li>Monthly curated tech reads selected by industry experts</li>
+            <li>Virtual and in-person meetups for deep-dive discussions</li>
+            <li>Early access to new tech book releases</li>
+            <li>Author Q&A sessions with tech thought leaders</li>
+          </ul>
+        </div>
+  
+        <picture>
+          <source srcset="assets\images\image-read-together-tablet.webp" media="(min-width: 768px)">
+          <source srcset="assets\images\image-read-together-desktop.webp" media="(min-width: 1200px)">
+          <img src="assets\images\image-read-together-mobile.webp" alt="people reading books together" class="feature__img">
+        </picture>
+      </div>
+  
+      <div class="feature">
+        <div class="feature__content">
+          <h2 class="feature__title">Not your average book <span class="text-decoration--circle">club</span></h2>      
+          <p class="feature__txt txt-preset-5 c--neutral-700">Connect with a community that speaks your language - from <strong>Python</strong> to <strong>TypeScript</strong> and everything in between. Our discussions blend technical depth with practical applications.</p>
+        </div>
+  
+        <div class="feature__img-container">
+          <picture>
+            <source srcset="assets\images\image-not-average-tablet.webp" media="(min-width: 768px)">
+            <source srcset="assets\images\image-not-average-desktop.webp" media="(min-width: 1200px)">
+            <img src="assets\images\image-not-average-mobile.webp" alt="people reading books together" class="feature__img">
+          </picture>
+  
+          <img class="feature__logos hide-on-mobile" src="assets/images/logos-tech.svg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="steps container">
+      <div class="steps__content container bg--neutral-100">
+        <h2 class="steps__title">Your tech reading journey</h2>
+
+          <div class="steps__items">
+            <div class="steps__item">
+              <p class="steps__number txt-preset-6">1</p>
+              <p class="txt-preset-6 steps__desc">Choose your membership tier</p>
+
+              <img src="assets/images/pattern-arrow.svg" class="steps__arrow" alt="">
+            </div>
+
+            <div class="steps__item">
+              <p class="steps__number txt-preset-6">2</p>
+              <p class="txt-preset-6 steps__desc">Get your monthly book selection</p>
+
+              <img src="assets/images/pattern-arrow.svg" class="steps__arrow" alt="">
+            </div>
+
+            <div class="steps__item">
+              <p class="steps__number txt-preset-6">3</p>
+              <p class="txt-preset-6 steps__desc">Join our discussion forums</p>
+
+              <img src="assets/images/pattern-arrow.svg" class="steps__arrow" alt="">
+            </div>
+
+            <div class="steps__item">
+              <p class="steps__number txt-preset-6">4</p>
+              <p class="txt-preset-6 steps__desc">Attend exclusive meetups</p> 
+            </div>
+          </div>
+
+          <img class="pattern--glow" src="assets/images/pattern-glow.svg" alt="">
+      </div>
+    </section>
+
+    <section class="options container" id="options">
+      <h2 class="options__title">Membership options</h2>
+
+      <div class="options__cards">
+        <div class="options__card">
+          <p class="options__type txt-preset-4">Starter</p>
+          <p class="txt-preset-3">$19 <span class="txt-preset-5 c--neutral-700">/month</span></p>
+          <hr class="options__divider">
+
+          <ul class="options__list list--check txt-preset-5 c--neutral-700">
+            <li>1 book/month</li>
+            <li>Online forums</li>
+          </ul>
+
+          <a href="" class="options__btn btn--light txt-preset-6 uppercase">Subscribe now</a>
+        </div>
+
+        <div class="options__card options__card--pro">
+          <div class="options__content">
+            <p class="options__type txt-preset-4">Pro</p>
+            <p class="txt-preset-3">$29 <span class="txt-preset-5 c--neutral-700">/month</span></p>
+            <hr class="options__divider">
+  
+            <ul class="options__list list--check txt-preset-5 c--neutral-700">
+              <li>2 book/month</li>
+              <li>Virtual meetups</li>
+            </ul>
+  
+            <a href="" class="options__btn btn--light txt-preset-6 uppercase">Subscribe now</a>
+          </div>
+
+          <img class="options__pattern pattern--glow" src="assets/images/pattern-glow.svg" alt="">
+        </div>
+
+        <div class="options__card">
+          <p class="options__type txt-preset-4">Enterprise</p>
+          <p class="txt-preset-3">Custom</p>
+          <hr class="options__divider">
+
+          <ul class="options__list list--check txt-preset-5 c--neutral-700">
+            <li>Team access</li>
+            <li>Private sessions</li>
+          </ul>
+
+          <a href="" class="options__btn btn--light txt-preset-6 uppercase">Talk to us</a>
+        </div>
+
+      </div>
+    </section>
+    
+    <section class="quote container">
+      <div class="quote__rating">
+        <img class="quote__star-icon" src="assets/images/icon-star.svg" alt="star rating">
+        <img class="quote__star-icon" src="assets/images/icon-star.svg" alt="star rating">
+        <img class="quote__star-icon" src="assets/images/icon-star.svg" alt="star rating">
+        <img class="quote__star-icon" src="assets/images/icon-star.svg" alt="star rating">
+        <img class="quote__star-icon" src="assets/images/icon-star.svg" alt="star rating">
+      </div>
+
+      <div class="quote__content">
+        <p class="quote__txt txt-preset-3">"This book club transformed my technical reading from a solitary activity into an enriching community experience. The discussions are gold!"</p>
+        <p class="quote__author txt-preset-5 c--neutral-700"> Sarah Chen, Software Architect</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer bg--neutral-900">
+    <div class="footer__content container">
+      <h2 class="footer__title">Ready to debug your reading list?</h2>
+  
+      <a href="#options" class="footer__btn btn--dark txt-preset-6 uppercase">Review Membership Options <img class="footer__arrow" src="assets/images/icon-arrow-up.svg" alt="up arrow"></a>
+  
+      <div class="footer__testimonial">
+        <img src="assets/images/image-avatars.webp" alt="three user photo icons" width="110" height="41" class="footer__user-icons">
+  
+        <div class="footer__rating">
+          <img class="footer__star-icon" src="assets/images/icon-star.svg" alt="star rating">
+          <img class="footer__star-icon" src="assets/images/icon-star.svg" alt="star rating">
+          <img class="footer__star-icon" src="assets/images/icon-star.svg" alt="star rating">
+          <img class="footer__star-icon" src="assets/images/icon-star.svg" alt="star rating">
+          <img class="footer__star-icon" src="assets/images/icon-star.svg" alt="star rating">
+        </div>
+        
+        <p class="footer__testimonial__txt txt-preset-7">200+ developers joined already</p>
+      </div>
+    </div>
+
+    <div class="footer__links container">
+      <div class="footer__credits">
+        <p class="txt-preset-7">© 2024 - Tech Book Club</p>
+      </div>
+      
+      <div class="footer__icons">
+        <img class="footer__bsky" src="assets/images/logo-bluesky.svg" alt="Bluesky">
+        <img src="assets/images/logo-linkedin.svg" alt="LinkedIn">
+      </div>
+    </div>
+
+  </footer>
+  
+</body>
+</html>

@@ -1,0 +1,203 @@
+/* inter-400/regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/inter-v19-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-600/semibold - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../assets/fonts/inter-v19-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* martian-mono-400/regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Martian Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/martian-mono-v5-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* martian-mono-600/semibold - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Martian Mono';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../assets/fonts/martian-mono-v5-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* martian-mono-700/bold - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Martian Mono';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../assets/fonts/martian-mono-v5-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@layer font-sizes {
+  :root {
+    --fs-62: 62px; 
+    --fs-38: 38px; 
+    --fs-50: 50px; 
+    --fs-34: 34px; 
+    --fs-24: 24px; 
+    --fs-20: 20px; 
+    --fs-18: 18px; 
+    --fs-16: 16px; 
+    --fs-14: 14px;  
+    --fs-preset-1: var(--fs-38);
+    --fs-preset-2: var(--fs-34);
+    --fs-preset-3: var(--fs-24);
+    --fs-preset-4: var(--fs-24);
+    --fs-preset-5: var(--fs-20);
+    --fs-preset-6: var(--fs-16);
+    --fs-preset-7: var(--fs-14);
+  
+    @media (min-width: 768px) {
+      --fs-preset-1: var(--fs-62);
+      --fs-preset-2: var(--fs-50);
+      --fs-preset-3: var(--fs-34);
+      --fs-preset-6: var(--fs-18);
+    }
+  }
+}
+
+body {
+  font-family: "Martian Mono", sans-serif;
+  font-weight: 400;
+  color: var(--c-neutral-900);
+  
+}
+
+h1 {
+  font-weight: 700;
+  font-size: var(--fs-preset-1);
+  line-height: 1.2;
+  letter-spacing: -2px;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: var(--fs-preset-2);
+  line-height: 1.3;
+  letter-spacing: -2px;
+}
+
+h3, .txt-preset-3 {
+  font-weight: 600;
+  font-size: var(--fs-preset-3);
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+@media (min-width: 768px) {
+  h3, .txt-preset-3 {
+    line-height: 1.3;
+  }
+}
+
+.txt-preset-4 {
+  font-weight: 600;
+  font-size: var(--fs-preset-4);
+  line-height: 1.1;
+  letter-spacing: -1px;  
+}
+
+.txt-preset-5 {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: var(--fs-preset-5);
+  line-height: 1.4;
+  letter-spacing: -0.5px;
+}
+
+.txt-preset-6 {
+  font-weight: 600;
+  font-size: var(--fs-preset-6);
+  line-height: 1.3;
+  letter-spacing: -1px;
+}
+
+.txt-preset-7 {
+  font-size: var(--fs-preset-7);
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+@layer text-transform {
+  .uppercase {
+    text-transform: uppercase;
+  }
+
+  .semibold {
+    font-weight: 600;
+  }
+
+  .bold {
+    font-weight: 700;
+  }
+}
+
+@layer text-decoration {
+  .text-decoration--circle {
+    position: relative;
+    overflow: visible;    
+  }
+
+  .text-decoration--circle::before {
+    content: '';
+    position: absolute;
+    transform: scale(0.7);
+    width: 200%;
+    height: 200%;
+    right: -60%;
+    top: -35%;
+    background: url("../assets/images/pattern-circle.png") no-repeat;
+  }
+
+  @media (min-width: 768px) {
+   .text-decoration--circle::before {
+    transform: scale(1);
+    right: -115px;
+    top: -2px;
+   }
+}
+
+}
+
+@layer color-transform {
+  .c--gradient {
+    background-image: var(--c-gradient-text);
+    color: transparent;
+    background-clip: text;
+  }
+
+  .c--neutral-700 {
+    color: var(--c-neutral-700);
+  }
+
+  .c--neutral-100 {
+    color: var(--c-neutral-100);
+  }
+
+  .c--neutral-0 {
+    color: var(--c-neutral-0);
+  }
+}
+
+/* 
+text preset 1 - h1
+text preset 2 - h2
+text preset 3 - h3 / membership options numbers / quote
+text preset 4 - membership options title
+text preset 5 - p / membership options description / list items
+text preset 6 - uppercase text / tech reading journey section items
+text preset 7 - small text / footer
+*/
+
+
